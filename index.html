@@ -1,14 +1,154 @@
 <!doctype html>
-
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
-</head>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+          rel="stylesheet"
+    >
+    <meta charset="utf-8">
+    <title>🔥 YoungRake</title>
+    <meta name="author" content="SitePoint">
+    <style>
 
-<body>
-  <h1>Zdarowa</h1>
-</body>
+      html, body {
+        height: 100%;
+        user-select: none;
+      }
+
+      body {
+        font-family: 'Libre Baskerville', serif;
+        background-color: #070029;
+        color: #D6D6D6;
+        margin: 0 auto;
+        max-width: 900px;
+        display: flex;
+        align-items: center;
+      }
+
+      .mail > a {
+        color: #FFBF00;
+        user-select: all;
+      }
+
+      main {
+        position: relative;
+      }
+
+      .info {
+        margin: auto 0;
+      }
+
+      .info > h1 {
+        font-size: 70px;
+        margin: 0;
+        white-space:nowrap;
+      }
+
+      .info > h3 {
+        font-weight: 400;
+        margin: 10px 0 0 0;
+        opacity: 0.5;
+        font-size: 20px;
+      }
+
+      .about > p {
+        font-weight: 650;
+        font-size: 24px;
+        margin: 20px 0 0 0;
+      }
+
+      .about > footer {
+        margin-top: 20px;
+      }
+
+      footer > a {
+        text-decoration: none;
+      }
+
+      a > img {
+        width: 60px;
+        margin-left: 15px;
+      }
+
+      section {
+        position: fixed;
+        right: 10vh;
+        z-index: -1;
+      }
+
+      .spinner {
+        margin-left: 200px;
+        animation-name: spin;
+        animation-duration: 7000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+
+
+
+      @keyframes spin {
+        from {
+          transform:rotate(0deg);
+        }
+        to {
+          transform:rotate(360deg);
+        }
+      }
+
+      @media (max-width: 700px) {
+        .info > h1 {
+          font-size: 50px;
+          margin: 0;
+        }
+      }
+
+      @media (max-width: 880px) {
+        .spinner {
+          display: none;
+        }
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <div class="info">
+        <section>
+          <img class="spinner" src="img/react.svg"/>
+        </section>
+        <h1>Max Kuchynskyj</h1>
+        <h3>Also known as YoungRake</h3>
+        <div class="about">
+          <p>
+            Full-stack developer, React lover &#10084;&#65039;,
+            <br>
+            freelancer
+          </p>
+          <p class="mail">
+            Email me <a href="mailto:youngrake@pm.me">youngrake@pm.me</a>
+          </p>
+          <footer>
+            <a target="_blank"
+               rel="noopener noreferrer"
+               href="https://github.com/youngrake"
+            >
+              <img src="img/github.svg"/>
+            </a>
+            <a target="_blank"
+               rel="noopener noreferrer"
+               href="https://www.linkedin.com/in/max-kuchynskyj-9639981a4/"
+            >
+              <img src="img/Lin.svg"/>
+            </a>
+            <a target="_blank"
+               rel="noopener noreferrer"
+               href="https://twitter.com/youngrake1"
+            >
+              <img src="img/twitter.svg"/>
+            </a>
+          </footer>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
